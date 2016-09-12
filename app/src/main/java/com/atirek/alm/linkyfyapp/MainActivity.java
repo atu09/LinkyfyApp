@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         //final Pattern hashtagPattern = Pattern.compile("#([ء-يA-Za-z0-9_-]+)");
         final Pattern hashtagPattern = Pattern.compile("#([A-Za-z0-9-_]+)");
         final String hashtagScheme = "content://com.hashtag.jojo/";
-       char[] mAdditionalHashTagChars = {'$','_','-'};
+        char[] mAdditionalHashTagChars = {'$', '_', '-'};
         final Pattern urlPattern = Patterns.WEB_URL;
 
         et_hash.addTextChangedListener(new TextWatcher() {
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                 tv_hashView.setText(hashTag);
 
             }
-        },mAdditionalHashTagChars);
+        }, mAdditionalHashTagChars);
 
         // pass a TextView or any descendant of it (incliding EditText) here.
         // Hash tags that are in the text will be hightlighed with a color passed to HasTagHelper
